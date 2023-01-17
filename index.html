@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Portfolio</title>
+	
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="text-center">
+
+	<!-- Navbar Start-->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+		<!-- Logo -->
+		<a href="#landing" class="navbar-brand" id="logo-container">
+			<img src="./images/logo.png" class="img-fluid" id="logo">
+		</a>
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar Links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#landing" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about-us" class="nav-link">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a href="#gallery" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact-us" class="nav-link">Contact Me</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+
+	<!-- Landing Page Start -->
+	<section id="landing" class="container-fluid d-flex justify-content-center flex-column gradient-text">
+		<h1>Hi, I'm Imman</h1>
+		<p>web developer</p>
+	</section>
+	<!-- Landing Page End -->
+
+
+	<!-- About Us Start-->
+	<section id="about-us" class="container-fluid d-flex flex-sm-column flex-lg-row align-items-center justify-content-center p-5">
+		<div class="col-12 col-lg-6">
+			<h2 class="mb-4 mt-sm-4 mt-lg-0 underlined-header">About Me</h2>
+			<div class="curvy-border">
+				<p class="text-justify">
+					My name is <span class="badge badge-primary">Christian Immanuel C. Ella</span> or <span class="badge badge-info">Imman</span> for short. I graduated from the <span class="badge badge-warning">University of the Philippines Manila</span> last September 2022 with a degree in <span class="badge badge-dark">Computer Science</span>. My interest in <span class="badge badge-danger">Web Development</span> was first sparked when I created my first website back in high school. The feeling of making something beautiful and being able to solve a problem at the same time led me to pursue my chosen course. I have experience in Web Development Technologies like <span class="badge badge-success">HTML</span>, <span class="badge badge-danger">CSS</span>, and <span class="badge badge-warning">JavaScript</span>. I am also familar with frameworks like <span class="badge badge-primary">Bootstrap</span> and <span class="badge badge-info">Django</span>. I also have other skills and projects which are outlined in my resume and <span class="badge badge-primary">Jobstreet</span> and <span class="badge badge-info">LinkedIn</span> accounts.
+				</p>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6"> 
+			<img src="./images/Software-Developer.svg" class="img-fluid">
+		</div>
+	</section>
+	<!-- About Us End -->
+
+	<!-- Gallery Start-->
+	<section id="gallery" class="container-fluid p-5">
+		<h2 class="underlined-header">Projects</h2>
+		
+		<!-- Carousel Section Start -->
+		<div class="row d-none d-md-block mt-md-5">
+			<div class="offset-xl-3 col-xl-6">
+				<!-- Carousel Indicators -->
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<!-- Carousel Items -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./images/front-end.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<a href="#landing" class="working-carousel-link"><h5>Front-End Programming</h5></a>
+								<p>Designed a website using HTML, CSS, and Bootstrap</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./images/coming-soon-1.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<a href="#" class="carousel-muted-link"><h5>Back-End Programming</h5></a>
+								<p>Utilized the MERN stack to build a dynamic website</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./images/coming-soon-2.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<a href="#" class="carousel-muted-link"><h5>Full-Stack Development</h5></a>
+								<p>Built a well-designed and fully functioning website</p>
+							</div>
+						</div>
+					</div>
+					<!-- Carousel Nav -->
+					<button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Carousel Section End -->
+
+		<!-- Card Section Start -->
+		<div class="card-deck d-flex flex-column d-md-none mt-sm-4">
+
+			<div class="card bg-lightpink my-4">
+				<img src="./images/front-end.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<a href="#landing" class="working-card-link"><h5 class="card-title">Front-End Programming</h5></a>
+					<p class="card-text">Designed a website using HTML, CSS, and Bootstrap</p>
+					<a href="#landing">Link to Project</a>
+				</div>
+			</div>
+
+			<div class="card bg-lightpink my-4">
+				<img src="./images/coming-soon-1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<a href="#" class="card-muted-link"><h5 class="card-title">Back-End Programming</h5></a>
+					<p class="card-text">Utilized the MERN stack to build a dynamic website</p>
+					<a href="#" class="card-muted-link">Link to Project</a>
+				</div>
+			</div>
+
+			<div class="card bg-lightpink my-4">
+				<img src="./images/coming-soon-2.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<a href="#" class="card-muted-link"><h5 class="card-title">Full-Stack Development</h5></a>
+					<p class="card-text">Built a well-designed and fully functioning website</p>
+					<a href="#" class="card-muted-link">Link to Project</a>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- Gallery End -->
+
+	<!-- Contact Us Start -->
+	<section id="contact-us" class="container-fluid p-5">
+		<h2 class="underlined-header mb-3">Contact Me</h2>
+
+		<div class="row justify-content-center">
+			<form class="p-3 col-sm-12 col-md-8 col-xl-10 mt-2" action="mailto:ccella@up.edu.ph" id="myForm">
+
+				<div class="form-group mt-3">
+					<label for="name">Full Name</label>
+					<input type="text" class="form-control mx-auto" id="name" aria-describedby="nameHelp" placeholder="Full Name">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+				</div>
+
+				<div class="form-group">
+					<label for="contact_number">Contact Number<small> (optional)</small></label>
+					<input type="number" class="form-control mx-auto" rows="5" id="contact_number" placeholder="+63 900 000 0000"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Message</label>
+					<textarea class="form-control mx-auto" id="exampleFormControlTextarea1" rows="6"></textarea>
+				</div>
+
+				<button type="submit" class="btn red-button button mb-3" id="submit-button" data-toggle="modal" data-target="#myModal">
+					<span>Send Email</span>
+				</button>
+
+
+			</form>
+		</div>
+		
+		<!-- Modal Start -->
+		<div class="modal fade text-dark" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header bg-pink">
+						<h4 class="modal-title">Thank you for contacting us!</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body text-success font-weight-bold bg-lightpink">
+						Message Successfully Sent
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer bg-pink">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Modal End -->
+	</section>
+	<!-- Contact Us End -->
+
+	<!-- Footer Start -->
+	<footer class="d-flex flex-row">
+		<div class="container-fluid bg-blue">
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="display: block;"><path fill="#067bc2" fill-opacity="1" d="M0,32L48,32C96,32,192,32,288,42.7C384,53,480,75,576,106.7C672,139,768,181,864,202.7C960,224,1056,224,1152,208C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+			<div>
+				<a href="https://www.facebook.com/imman.ella" target="_blank"><i class="fa fa-facebook-square" id="facebook"></i></a>
+				<a href="https://www.linkedin.com/in/christian-immanuel-ella-5a8423210/" target="_blank"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
+				<a href="https://myjobstreet.jobstreet.com.ph/resume/preview-resume.php" target="_blank"><i class="fa fa-briefcase" id="jobstreet"></i></a>
+				<a href="https://github.com/ccella" target="_blank"><i class="fa fa-github-square" id="github"></i></a>
+			</div>
+			<div class="wave">
+				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					<path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+				</svg>
+			</div>
+
+		</div>
+	</footer>
+	<!-- Footer End -->
+
+
+	<!-- Bootstrap script -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
