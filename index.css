@@ -53,6 +53,12 @@ nav {
 	font-size: 8rem;
 }
 
+@media only screen and (max-width: 566px) {
+	#landing h1 {
+		font-size: 4rem;
+	}
+}
+
 .gradient-text {
 	--bg-size: 400%;
 	--color-one: #067bc2;
@@ -228,32 +234,32 @@ footer i:hover {
 }
 
 .wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	z-index: -1;
 }
 
 .wave svg {
-    position: relative;
-    display: block;
-    width: calc(176% + 1.3px);
-    height: 200px;
+	position: relative;
+	display: block;
+	width: calc(176% + 1.3px);
+	height: 200px;
 }
 
 .wave .shape-fill {
-    fill: #067BC2;
+	fill: #067BC2;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .wave svg {
-        width: calc(199% + 1.3px);
-        height: 200px;
-    }
+	.wave svg {
+		width: calc(199% + 1.3px);
+		height: 200px;
+	}
 }
 
 /*footer {
